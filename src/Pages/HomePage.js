@@ -1,13 +1,15 @@
 import React from 'react';
 import '../App.css';
 import EventCard from '../Components/EventsCard';
+import Contact from '../Components/Contact';
 
-function Home() {
+function HomePage() {
   return (
     <div>
       <EventCard/>
+      <Contact />
     </div>
   );
 }
 
-export default Home;
+export default HomePage;
