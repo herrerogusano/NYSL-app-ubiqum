@@ -8,28 +8,8 @@ import './index.css';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
-import HomePage from './Pages/HomePage';
-import SchedulePage from './Pages/SchedulePage';
 
 
-/* const router = createBrowserRouter([
-  { 
-    
-    path: "/home",
-    element: <HomePage/>
-  },
-  { 
-    
-    path: "/*",
-    element: <App/>
-  },
-  { 
-    
-    path: "/schedule",
-    element: <SchedulePage />
-  },
-
-]); */
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

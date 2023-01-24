@@ -1,13 +1,16 @@
 import React from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import './App.css';
-import LabelBottomNavigation from './Components/Navbar';
-import HomePage from './Pages/HomePage';
-import LayoutPage from './Pages/LayoutPage';
-import SchedulePage from './Pages/SchedulePage';
-import { Link } from "react-router-dom";
+import HomePage from './pages/HomePage';
+import LayoutPage from './pages/LayoutPage';
+import SchedulePage from './pages/SchedulePage';
+import GamesPage from './pages/GamesPage';
+import LocationsPage from './pages/LocationsPage';
+import ChatPage from './pages/ChatPage';
+import NoPage from './pages/NoPage';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 
 const darkTheme = createTheme({
@@ -24,10 +27,13 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<LayoutPage />}>
+          <Route index element={<HomePage />} />
           <Route path="home" element={<HomePage />} />
           <Route path="schedule" element={<SchedulePage />} />
-          {/* <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} /> */}
+          <Route path="games" element={<GamesPage />} />
+          <Route path="locations" element={<LocationsPage />} />
+          <Route path="chat" element={<ChatPage />} />
+          <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

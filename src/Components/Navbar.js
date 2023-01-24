@@ -11,7 +11,7 @@ import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
 import Paper from '@mui/material/Paper';
 import { Link } from "react-router-dom";
 import { Route, useLocation } from "react-router-dom";
-import HomePage from '../Pages/HomePage';
+import HomePage from '../pages/HomePage';
 
 
 
@@ -33,13 +33,11 @@ export default function LabelBottomNavigation() {
       
       <BottomNavigation sx={{ }} value={value} onChange={handleChange}>
         <BottomNavigationAction
-           component={Link}
-           to="/home"
+          component={Link}
+          to="/home"
           label="Home"
-          value="home"
-         
+          value="home"       
           icon={<HomeIcon />}
-          element={ <HomePage /> }
         />
         <BottomNavigationAction
           component={Link}
@@ -49,16 +47,22 @@ export default function LabelBottomNavigation() {
           icon={<CalendarMonthIcon />}
         />
         <BottomNavigationAction
+          component={Link}
+          to="/games"
           label="Games"
           value="games"
           icon={<SportsSoccerIcon />}
         />
         <BottomNavigationAction
+          component={Link}
+          to="/locations"
           label="Locations"
           value="locations"
           icon={<LocationOnIcon />}
         />
         <BottomNavigationAction 
+          component={Link}
+          to="/chat"
           label="Chat" 
           value="chat" 
           icon={<ChatIcon />} />

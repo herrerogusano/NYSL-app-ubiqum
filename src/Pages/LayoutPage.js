@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import React from 'react'
-import Navbar from '../Components/Navbar'
-import Banner from '../Components/Banner'
+import Navbar from '../components/Navbar'
+import Banner from '../components/Banner'
 
 const LayoutPage = () => {
   return (

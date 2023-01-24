@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
-import EventCard from '../Components/EventsCard';
-import Contact from '../Components/Contact';
+import EventCard from '../components/EventsCard';
+import Contact from '../components/Contact';
 
 function HomePage() {
   return (
