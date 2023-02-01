@@ -3,7 +3,7 @@ import {months} from "./months";
 export const getHeaderTitles = (pathName, month= '01') => {
     const titles = {
         schedule: [months[month], 'Teams', 'Location', 'Time'],
-        gamePage: {
+        games: {
             gameTableHeaderTitles: ['Date', 'Teams', 'Location', 'Time'],
             locationTableHeaderTitles: ['Location Name', 'Address', 'Map']
         }

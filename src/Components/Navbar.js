@@ -39,13 +39,14 @@ export default function LabelBottomNavigation() {
           value="home"       
           icon={<HomeIcon />}
         />
-        <BottomNavigationAction
+         <BottomNavigationAction
           component={Link}
           to="/schedule"
           label="Schedule"
           value="schedule"
           icon={<CalendarMonthIcon />}
         />
+        
         <BottomNavigationAction
           component={Link}
           to="/games"

@@ -1,9 +1,16 @@
 import React from 'react'
+import GameDetails from '../components/GameDetails'
+import LocationDetails from '../components/LocationDetails'
+import { useParams } from 'react-router-dom'
+import { tableData } from '../data/tableData'
 
 const GamesPage = () => {
+
+
   return (
     <div>
-      <h1>In process...:)</h1>
+      <GameDetails />
+      <LocationDetails />
     </div>
   )
 }

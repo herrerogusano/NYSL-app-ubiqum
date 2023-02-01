@@ -1,9 +1,9 @@
 import React from 'react';
 
-export const Table = ({className = '', children}) => {
-    const currentClassName = 'table table-bordered ' + className;
+export const Table = ({children}) => {
+    
    return (
-        <table className={currentClassName}>
+        <table>
             {children}
         </table>
     );
